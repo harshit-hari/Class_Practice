@@ -6,10 +6,18 @@ boolean ringing;
 
     public DeskPhone(String myPhone) {
         this.myPhone = myPhone;
+//        makeCall(myPhone);
+    }
+
+    @Override
+    public boolean SwitchOn() {
+        System.out.println("Always on");
+        return true;
     }
 
     @Override
     public void makeCall(String phoneNo) {
+
         System.out.println("calling" + phoneNo);
     }
 
@@ -32,6 +40,7 @@ boolean ringing;
 
     @Override
     public boolean isRinging() {
+        if (ringing == true)
         System.out.println("phone is ringing");
         return ringing;
     }

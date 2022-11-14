@@ -6,4 +6,5 @@ public interface Telephone {
     public  boolean isRinging();
 
 
+
 }
